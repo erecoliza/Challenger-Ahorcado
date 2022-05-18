@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    /*width: 1440px;
+    height: 1024px;   */
+    /* Light blue/light-blue-100 */ 
+    background: #F3F5FC;
+}
+
+#frame4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+#logo {
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;      
+}
+
+#vector{
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+    /* Dark blue/dark-blue-300 */    
+    /*background: #0A3871;*/
+}
+#iniciarJuego {
+    /* Button */
+    /* Auto layout */
+    padding: 24px;
+    gap: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    /* White */
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 561px;
+    top: 402px;
+/* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    border-radius: 24px;
+}
+
+#agregarPalabra{
+    /* Button */
+    box-sizing: border-box;
+    /* Auto layout */
+    padding: 24px;
+    gap: 8px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+    position: absolute;
+    width: 280px;
+    height: 67px;
+    left: 579px;
+    top: 554px;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
