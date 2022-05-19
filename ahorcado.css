@@ -6,9 +6,8 @@ body{
     margin: 0px;
     padding: 0px;
     position: relative;
-    /*width: 1440px;
-    height: 1024px;   */
-    /* Light blue/light-blue-100 */ 
+    width: 1440px;
+    height: 1024px;
     background: #F3F5FC;
 }
 
@@ -19,11 +18,10 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 gap: 40px;
-
 position: absolute;
 width: 120px;
 height: 48px;
-left: 40px;
+left: 88px;
 top: 40px;
 }
 
@@ -45,6 +43,7 @@ top: 40px;
 }
 #iniciarJuego {
     /* Button */
+    box-shadow: #094c66 4px 4px 0px;  
     /* Auto layout */
     padding: 24px;
     gap: 8px;
@@ -71,6 +70,7 @@ top: 40px;
 #agregarPalabra{
     /* Button */
     box-sizing: border-box;
+    box-shadow: #094c66 4px 4px 0px;  
     /* Auto layout */
     padding: 24px;
     gap: 8px;
@@ -92,4 +92,88 @@ top: 40px;
     /* Dark blue/dark-blue-300 */
     border: 1px solid #0A3871;
     border-radius: 24px;
+}
+
+.download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: #a7acc7;
+    border: solid 1px #3109e42d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+   }
+
+#agregarPalabra:hover .download {
+    transform: translateY(100%)
+   }
+   
+   .download svg polyline,.download svg line {
+    animation: docs 1s infinite;
+   }
+   
+   @keyframes docs {
+    0% {
+     transform: translateY(0%);
+    }
+   
+    50% {
+     transform: translateY(-15%);
+    }
+   
+    100% {
+        transform: translateY(0%);
+    }  
+   }
+
+
+#iniciarJuego:hover,
+#agregarPalabra:hover
+ {
+    cursor: pointer;
+  }
+  
+#iniciarJuego:active,
+#agregarPalabra:active 
+{
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #094c66 0px 0px 0px; 
+    ;
+}
+
+
+
+
+
+
+
+
+/* CELULAR   */
+
+@media only screen and (max-width: 600px) {
+
+}
+
+/* TABLET   */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* LAPTOP   */
+
+@media only screen and (max-width: 992px) {
+
+}
+
+/* PC   */
+
+@media only screen and (max-width: 1200px) {
+
 }
