@@ -3,14 +3,18 @@ function funcionIniciar(){
 }
 
 function funcionAgregar(){
-    swal("Agregar", {
+    var palabra = document.createElement("input");
+    palabra.maxLength=8 
+    palabra.font
+    
+    swal("Agregar palabra     (Máx. de 8 letras)", {
         content:{
-            element: "input",
+            element: palabra,
             attributes: {
-              placeholder: "Ingrese palabra",
+              placeholder: "Ingrese palabra",              
             },
           },                 
-          buttons: true,               
+          buttons: true,    
       },)
       .then((value) => {
           if (value == null) {
@@ -18,7 +22,7 @@ function funcionAgregar(){
                 icon: "warning",
               });
           } else {
-        swal(`se agrego la palabra =>  ${value}`, {
+        swal(`se agrego la palabra =>  ${palabra.value}`, {
             icon: "success",
           });
           }
