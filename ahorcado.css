@@ -147,7 +147,25 @@ top: 40px;
     ;
 }
 
-
+footer {    
+    top: 990px;
+    /* left: 230px; */
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    font-family:'GothamRounded', sans-serif;
+    /*font-family: 'Inter';*/
+    font-style: normal;
+    font-weight: 200px;
+    /*font-size: 20px;*/
+    font-size: 1rem;
+    line-height: 100%;
+    text-align: center;
+    color:white;
+    background-color: rgb(0, 112, 115);
+    padding-bottom: 20px;     
+}
 
 
 
