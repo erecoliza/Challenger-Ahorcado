@@ -1,5 +1,6 @@
 function funcionIniciar(){
-    swal("Iniciar Juego", "Se Iniciara el juego", "info"); 
+  /*swal("Iniciar Juego", "Se Iniciara el juego", "info");*/
+  window.location.href = "./juego.html"; 
 }
 
 function funcionAgregar(){ 
@@ -36,5 +37,13 @@ function funcionAgregar(){
 });         
 }
 
-iniciarJuego.onclick = funcionIniciar;
-agregarPalabra.onclick = funcionAgregar;
+function funcionDesistir(){ 
+  console.log("llegue");
+  window.location.href = "/"; 
+}
+
+
+
+
+
+

@@ -11,10 +11,12 @@
 <body>
     <div id="frame4">
         <div id="logo">
-            <img id="vector" src="./images/Logo.png" alt="Alura Logo">                   
+            <a href="/">
+                <img id="vector" src="./images/Logo.png" alt="Alura Logo" href="/">                   
+            </a>            
         </div>    
     </div>
-    <button id="iniciarJuego">Iniciar Juego</button>
+    <button id="iniciarJuego" class="buttonGral">Iniciar Juego</button>
     <button id="agregarPalabra">Agregar nueva palabra
         <div class="download">
           <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
@@ -22,6 +24,10 @@
     </button>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./ahorcado.js"></script>
+    <script>
+        iniciarJuego.onclick = funcionIniciar;
+        agregarPalabra.onclick = funcionAgregar;
+    </script>
 </body>
 <footer>
     <h5>Página creada por (<i class="material-icons">&#xe7fd;</i> Eduardo Recoliza) <i class="material-icons">&#xe55e;</i>  Argentina (2022)</h5>       
