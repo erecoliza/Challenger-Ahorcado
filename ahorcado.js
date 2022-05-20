@@ -1,6 +1,19 @@
+function funcionLeerDiccionario(){
+  const requestURL = './diccionario.json';
+  const request = new XMLHttpRequest();
+  request.open('GET', requestURL);
+  request.responseType = 'json';
+  request.send();
+  request.onload = function() {
+    const diccionario = request.response;
+    const myString = JSON.stringify(diccionario);
+    swal("Logrado", myString, "success"); 
+  }
+}
+
 function funcionIniciar(){
   /*swal("Iniciar Juego", "Se Iniciara el juego", "info");*/
-  window.location.href = "./juego.html"; 
+  window.location.href = "./juego.html";    
 }
 
 function funcionAgregar(){ 
@@ -38,7 +51,6 @@ function funcionAgregar(){
 }
 
 function funcionDesistir(){ 
-  console.log("llegue");
   window.location.href = "/"; 
 }
 
