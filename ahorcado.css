@@ -38,8 +38,6 @@ top: 40px;
     right: 37.43%;
     top: 0%;
     bottom: 0%;
-    /* Dark blue/dark-blue-300 */    
-    /*background: #0A3871;*/
 }
 
 .buttonGral {
@@ -53,10 +51,7 @@ top: 40px;
     font-size: 18px;
     line-height: 22px;
     align-items: center;
-    text-align: center;
-    /* White */
-    
-    /* Dark blue/dark-blue-300 */  
+    text-align: center;  
 }
 
 #iniciarJuego {
@@ -71,13 +66,19 @@ top: 40px;
     border-radius: 24px;    
 }
 
-#nuevoJuego{
+.contenedorJuego {
+    top: 680px;
+    left: 20%;    
     position: absolute;
+    display: flex;
+    display: inline-block;    
+    flex-wrap: wrap;
+}
+
+#nuevoJuego{   
     width: 332px;
     height: 67px;
-    left: 20%;
-    /*left: 376px;*/
-    top: 701px;
+    margin: 10px;
     background: #0A3871;
     color: #FFFFFF;
     box-shadow: #094c66 4px 4px 0px;
@@ -85,13 +86,9 @@ top: 40px;
 }
 
 #desistir{
-    position: absolute;
     width: 332px;
+    margin: 10px;
     height: 67px;
-    left: 50%;
-    /*left: 732px;*/
-    top: 701px;
-    /*background: #0A3871;*/
     color: #0A3871;
     box-shadow: #094c66 4px 4px 0px;
     border-radius: 24px;    
@@ -223,3 +220,8 @@ footer {
 @media only screen and (max-width: 1200px) {
 
 }
+
+
+
+
+
