@@ -1,14 +1,9 @@
-function funcionLeerDiccionario(){
-  const requestURL = './diccionario.json';
-  const request = new XMLHttpRequest();
-  request.open('GET', requestURL);
-  request.responseType = 'json';
-  request.send();
-  request.onload = function() {
-    const diccionario = request.response;
-    const myString = JSON.stringify(diccionario);
-    swal("Logrado", myString, "success"); 
-  }
+function funcionleoDiccionario(){
+
+}
+
+function funcionGraboDiccionario() {
+
 }
 
 function funcionIniciar(){
@@ -17,6 +12,10 @@ function funcionIniciar(){
 }
 
 function funcionAgregar(){ 
+  var diccionario = [];
+
+  //diccionario = funcionleoDiccionario();  
+ 
   var palabra = document.createElement("input");
   palabra.maxLength = 8 ; 
   palabra.placeholder = "Ingrese palabra";
@@ -38,10 +37,15 @@ function funcionAgregar(){
 })
 .then((value) => {
   switch (value) {      
-    case "Agregar":
-      swal("Agregar", `"${palabra.value}"  se agregara a la lista`, "success");
+    case "Agregar":     
+       
+      diccionario.push(`${palabra.value}`)
+
+      //funcionGraboDiccionario();
+
+      swal("Agregar", `"${palabra.value}"  se agregara a la lista`, "success"); 
       break;
- 
+
     default:
       swal("operación cancelada", {
         icon: "warning",
